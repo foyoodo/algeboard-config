@@ -12,11 +12,12 @@
 
 / {
     macros {
-        unlock: lockscreen {
+        unlock: unlock_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp U &kp F &kp MINUS &kp T &kp P &kp N4 &kp ENTER>;
-            label = "LOCKSCREEN";
+            label = "UNLOCK_SCREEN";
+            tap-ms = <10>;
         };
 
         toggle_fullscreen: toggle_fullscreen {
